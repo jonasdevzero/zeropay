@@ -19,5 +19,8 @@ config :zeropay, ZeropayWeb.Endpoint,
   http: [port: 4002],
   server: false
 
+config :pbkdf2_elixir,
+  rounds: 1
+
 # Print only warnings and errors during test
 config :logger, level: :warn
