@@ -22,6 +22,10 @@ config :zeropay, Zeropay.Repo,
   migration_primary_key: [type: :binary_id],
   migration_foreing_key: [type: :binary_id]
 
+config :zeropay, :basic_auth,
+  username: "devzero",
+  password: "012345"
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
